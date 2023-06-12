@@ -14,7 +14,7 @@ import javax.swing.SwingUtilities
 import javax.swing.UIManager
 
 class Helper {
-    fun addition_isCorrect(inputFile:File,dir:String):MutableList<LoganLogItem> {
+    fun decodeFile(inputFile:File,dir:String):MutableList<LoganLogItem> {
         val dataLs = mutableListOf<LoganLogItem>()
         //输出文件地址
         val outPutFile = File("${dir}\\decode.log")
@@ -95,6 +95,7 @@ class Helper {
             isMultiSelectionEnabled = false
 //            fileFilter = FileNameExtensionFilter("文件过滤", *suffixList)
             val result = showOpenDialog(ComposeWindow())
+
             if (result == JFileChooser.APPROVE_OPTION) {
                 val dir = this.currentDirectory
                 val file = this.selectedFile
@@ -103,7 +104,6 @@ class Helper {
                 onFileSelected(dir.absolutePath,file)
             }
         }
-
     }
 
     /**
@@ -111,7 +111,7 @@ class Helper {
      * @param date
      * @return
      */
-    fun formatDateTimeForLong(date: Long?): String? {
+    private fun formatDateTimeForLong(date: Long?): String? {
         if (Objects.isNull(date)) {
             return ""
         }

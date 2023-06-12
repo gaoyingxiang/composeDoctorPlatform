@@ -37,25 +37,25 @@ compose.desktop {
         javaHome = System.getenv("JAVA_HOME_FOR_DESKTOP")
         nativeDistributions {
 //            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb,TargetFormat.Exe)
-            targetFormats(TargetFormat.Exe)
-//            targetFormats(TargetFormat.Msi)
+//            targetFormats(TargetFormat.Exe)
+            targetFormats(TargetFormat.Msi)
             packageName = "log"
             packageVersion = "1.0.0"
 //            outputBaseDir.set(project.buildDir.resolve("customOutputDir"))
-//            macOS {
-//                packageVersion = "1.1.0"
-//                dmgPackageVersion = "1.1.0"
-//                pkgPackageVersion = "1.1.0"
-//
-//                packageBuildVersion = "1.1.0"
-//                dmgPackageBuildVersion = "1.1.0"
-//                pkgPackageBuildVersion = "1.1.0"
-//            }
-//            windows {
-//                packageVersion = "1.2.0"
-//                msiPackageVersion = "1.2.0"
-//                exePackageVersion = "1.2.0"
-//            }
+            macOS {
+                packageVersion = "1.1.0"
+                dmgPackageVersion = "1.1.0"
+                pkgPackageVersion = "1.1.0"
+
+                packageBuildVersion = "1.1.0"
+                dmgPackageBuildVersion = "1.1.0"
+                pkgPackageBuildVersion = "1.1.0"
+            }
+            windows {
+                packageVersion = "1.2.0"
+                msiPackageVersion = "1.2.0"
+                exePackageVersion = "1.2.0"
+            }
         }
     }
 }
