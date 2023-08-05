@@ -42,7 +42,7 @@ class MyDesktopApp(private var application: ApplicationScope) : BaseView<MainMod
             resizable = true,
             undecorated = true,
             transparent = true,
-            icon = painterResource("images/ic_logo_round.png")
+//            icon = painterResource("images/ic_logo_round.png")
         ) {
             MaterialTheme(
                 colors = MaterialTheme.colors.copy(

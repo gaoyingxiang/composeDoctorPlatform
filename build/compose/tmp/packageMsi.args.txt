@@ -7,7 +7,7 @@
 --java-options
 "'-Dcompose.application.resources.dir=$APPDIR\\resources'"
 --main-jar
-"D:\\mCloudDownload\\MyDesktop\\build\\compose\\tmp\\packageMsi\\libs\\MyDesktop-1.0-3c1374edaf5f325237363a6cfb917b47.jar"
+"D:\\mCloudDownload\\MyDesktop\\build\\compose\\tmp\\packageMsi\\libs\\MyDesktop-1.0-2f532cd5fd51c5a5172b1df958f5f4c.jar"
 --main-class
 "MainKt"
 --icon
@@ -26,4 +26,4 @@
 --name
 "log"
 --app-version
-"1.0.0"
+"1.2.0"
